@@ -19,13 +19,15 @@ A comprehensive frontend bootcamp repository covering HTML5, CSS3, Tailwind CSS,
 
 ## 📁 Folder Structure
 
+```graphql
 frontend-foundations/
-├── html-css/ # HTML5 and CSS3 learning and practice
-├── tailwind-css/ # Tailwind CSS UI experiments
-├── javascript-basics/ # JS fundamentals, DOM, events
-├── git-github/ # Git & GitHub notes and workflows
-├── mini-projects/ # Small practical projects using core skills
+├── html-css/           # HTML5 and CSS3 learning and practice
+├── tailwind-css/       # Tailwind CSS UI experiments
+├── javascript-basics/  # JS fundamentals, DOM, events
+├── git-github/         # Git & GitHub notes and workflows
+├── mini-projects/      # Small practical projects using core skills
 └── README.md
+```
 
 ---
 
