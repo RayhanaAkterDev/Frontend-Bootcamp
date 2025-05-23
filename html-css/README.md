@@ -4,61 +4,38 @@ This section of the `frontend-foundations` repository focuses on the core buildi
 
 ---
 
+## 🧠 Topics Covered
+
+- **HTML5**: Semantic tags, forms, accessibility best practices
+- **CSS3**: Box model, selectors, positioning, typography, backgrounds, pseudo-classes
+- **Responsive Design**: Flexbox, Grid, media queries, mobile-first layouts, fluid units
+- **Mini Projects**: Applying concepts in small, practical frontend projects
+
+---
+
 ## 📁 Folder Overview
 
-### `html/`
+```cpp
+frontend-foundations/
+├── html-css/ # HTML5, CSS3, and responsive design practice
+│ ├── html/ # Core HTML elements and semantics
+│ ├── css/ # Styling fundamentals and layout techniques
+│ └── responsive-design/ # Flexbox, Grid, media queries and responsive layouts
+├── git-github/ # Git basics, commands, and GitHub workflows
+├── mini-projects/ # Small projects to apply learned concepts
+└── README.md # This documentation
+```
 
-Contains foundational HTML practice files.
+## 🎯 Goals & Learning Approach
 
-**Topics covered:**
+This repository is designed to help you build strong frontend fundamentals required for entry-level developer roles through a clear, structured, and hands-on learning path.
 
-- Basic document structure and tags
-- Text elements: headings, paragraphs, div/span
-- Lists and hyperlinks
-- Embedding media (images, audio, video, iframes)
-- HTML tables
-- Forms and input types
-- Semantic tags (header, footer, article, etc.)
-- Accessibility best practices (alt text, ARIA, labels)
+- Develop essential HTML5 and CSS3 skills with practical exercises and projects
+- Organize topics progressively using standalone, well-commented files for easy understanding
+- Include cheatsheets and notes for quick revision and lasting reference
+- Prepare a solid foundation for more advanced frontend topics like JavaScript and frameworks
 
----
-
-### `css/`
-
-Focuses on CSS styling, layout control, and visual formatting.
-
-**Topics covered:**
-
-- Selectors and specificity
-- Box model: margin, border, padding
-- Typography: font styles, colors
-- Backgrounds, borders, gradients
-- Positioning: relative, absolute, fixed
-- Display properties and visibility
-- Pseudo-classes and pseudo-elements
-- CSS reset and normalization
-
----
-
-### `responsive-design/`
-
-Demonstrates layout techniques for building responsive, mobile-friendly websites.
-
-**Topics covered:**
-
-- Flexbox and Grid layouts
-- Media queries and breakpoints
-- Mobile-first design principles
-- Fluid/responsive units: %, rem, vw, vh
-- Responsive navigation bar example
-
----
-
-## 📌 Learning Approach
-
-Each topic is demonstrated using standalone HTML or CSS files, organized numerically to follow a progressive flow. Cheatsheets and notes are included for quick revision and future reference.
-
-> This section forms the foundation for more advanced topics like JavaScript and frontend frameworks.
+Explore the organized folders to follow the learning roadmap and practice files that reinforce each concept. This repo will be actively maintained and expanded with new projects and advanced topics as your skills grow.
 
 ---
 
