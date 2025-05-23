@@ -50,6 +50,7 @@ Currently active — practicing and pushing new updates regularly
 ## 📌 Purpose
 
 This repository is meant to:
+
 - Build and document strong frontend fundamentals
 - Practice version control and GitHub workflows
 - Showcase learning progress in a clean, organized way
