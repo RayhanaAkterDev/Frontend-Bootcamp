@@ -1,0 +1,39 @@
+<!--
+    File: 06-forms.html
+    Purpose: Demonstrates a basic HTML form with common input elements.
+    Concepts covered: <form>, <input>, <label>, <textarea>, <button>, form attributes.
+    Instructions: Open this file in a browser to interact with the form.
+
+    Author: Rayhana Akter Sumaya
+    Date: 2025-05-23
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>HTML Forms</title>
+    </head>
+    <body>
+        <form action="/submit">
+            <!-- ANCHOR: Name Field -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+            <br /><br />
+
+            <!-- ANCHOR: Email Field -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+            <br /><br />
+
+            <!-- ANCHOR: Message Field -->
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" cols="30"></textarea>
+            <br /><br />
+
+            <!-- ANCHOR: Submit Button -->
+            <button type="submit">Submit</button>
+        </form>
+    </body>
+</html>
