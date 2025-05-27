@@ -1,0 +1,42 @@
+<!--
+    File: 09-accessibility-demo.html
+    Purpose: Demonstrates basic HTML accessibility practices using alt attributes, labels, and ARIA roles.
+    Concepts covered: alt text for images, form label association, role attributes, and keyboard navigation support.
+    Instructions: Open in a browser and inspect elements to understand how they improve accessibility for screen readers and assistive technologies.
+
+    Author: Rayhana Akter Sumaya
+    Date: 2025-05-27
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Accessibility Demo</title>
+    </head>
+    <body>
+        <!-- ANCHOR: Image with alt text for screen readers -->
+        <img src="profile.jpg" alt="Profile photo of Rayhana Akter Sumaya" />
+
+        <!-- ANCHOR: Form with associated label for input -->
+        <form>
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" />
+
+            <button type="submit">Subscribe</button>
+        </form>
+
+        <!-- ANCHOR: Landmark roles for screen readers -->
+        <nav role="navigation">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Articles</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- ANCHOR: Live region for dynamic updates -->
+        <div aria-live="polite">Your settings have been saved.</div>
+    </body>
+</html>
