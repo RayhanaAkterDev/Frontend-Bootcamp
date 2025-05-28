@@ -23,7 +23,7 @@
         <!-- SECTION: Unordered and Ordered Lists -->
 
         <!-- ANCHOR: Grocery List (Unordered) -->
-        <h2>Grocery List</h2>
+        <h2 id="Grocery">Grocery List</h2>
         <ul>
             <li>Milk</li>
             <li>Eggs</li>
@@ -47,10 +47,6 @@
         </ol>
 
         <!-- ANCHOR: Glossary (Description List) -->
-        <!-- NOTE: Semantic use-case: Description lists (<dl>) are useful for FAQs, glossaries, or
-            any term-description structure. Though not visually styled by default, they improve
-            accessibility and structure. Used selectively in modern sites. -->
-
         <h2>HTML Glossary</h2>
         <dl>
             <dt>HTML</dt>
@@ -64,8 +60,6 @@
         </dl>
 
         <!-- SECTION: Hyperlinks -->
-
-        <!-- ANCHOR: Navigation Links -->
         <h2>Useful Links</h2>
         <ul>
             <li>
@@ -84,6 +78,28 @@
                 <a href="/files/html-cheatsheet.pdf" download
                     >Download HTML Cheat Sheet (PDF)</a
                 >
+            </li>
+        </ul>
+
+        <!-- SECTION: Additional Link Types -->
+        <h2>Extra Links</h2>
+
+        <p>
+            You can also add internal links to other pages or link to a section
+            within the same page.
+        </p>
+
+        <ul>
+            <li>
+                <a href="02-text-elements.html"
+                    >Go to HTML Text Elements file</a
+                >
+            </li>
+            <li>
+                <a href="10-html-entities.html">Visit the HTML Entities page</a>
+            </li>
+            <li>
+                <a href="#Grocery">Jump to Grocery List section</a>
             </li>
         </ul>
     </body>
