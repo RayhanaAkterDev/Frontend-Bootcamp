@@ -17,15 +17,23 @@
         <title>HTML Images & Media</title>
     </head>
     <body>
-        <!-- ANCHOR: Images with absolute URL -->
-        <img src="https://example.com/image.jpg" alt="Example Image" />
+        <!-- ANCHOR: Images with absolute URL, size and title attributes  -->
+        <img
+            width="800"
+            height="500"
+            src="https://images.unsplash.com/photo-1746908592757-2c1d682b71db?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="online image"
+            title="Click for details"
+        />
 
         <!-- ANCHOR: Images with relative path -->
-        <img src="images/photo.jpg" alt="Local Photo" />
+        <img
+            width="400px"
+            src="../images/dog-image.jpg"
+            alt="Local Dog Photo"
+        />
 
-        <!-- ANCHOR: Images with size and title attributes -->
-        <img src="banner.jpg" width="300" height="150" alt="Banner" />
-        <img src="icon.png" alt="Information Icon" title="Click for details" />
+        <br />
 
         <!-- ANCHOR: HTML5 Audio Player -->
         <audio controls autoplay>
@@ -34,16 +42,23 @@
         </audio>
 
         <!-- ANCHOR: HTML5 Video Player -->
-        <video src="video.mp4" autoplay loop muted></video>
-        <video src="video.mp4" controls></video>
+        <video
+            src="../videos/local-video.mp4"
+            autoplay
+            loop
+            muted
+            controls
+        ></video>
 
         <!-- ANCHOR: Embedded YouTube Video using iframe -->
         <iframe
-            src="https://www.youtube.com/embed/dQw4w9WgXcQ"
             width="560"
             height="315"
+            src="https://www.youtube.com/embed/CFiCdpnn-jo?si=uoUpnZQQbPIjcfGr"
             title="YouTube video player"
             frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
             allowfullscreen
         ></iframe>
     </body>
