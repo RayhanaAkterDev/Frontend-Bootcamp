@@ -1,13 +1,3 @@
-<!--
-    File: 06.1-advanced-form-elements.html
-    Purpose: Practice advanced HTML5 form features, input types, validation, and accessibility.
-    Topics: input types (date, number, color, range), min/max, pattern, required, fieldset, aria
-    Obsidian Note: obsidian://open?vault=crisis-vault&file=%40coding_notes%2F%4001%20%C2%BB%20HTML%20%26%20CSS%2FHTML5%2F%40006.1%20%C2%BB%20Advanced%20Forms%20Elements%20%26%20Validation
-
-    Author: Rayhana Akter Sumaya
-    Date: 2025-05-29
--->
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -74,7 +64,7 @@
 
             <br />
 
-            <!-- ANCHOR: Security Section -->
+            <!-- ANCHOR: Account Setup Section -->
             <fieldset>
                 <legend>🔐 Account Setup</legend>
 
@@ -103,6 +93,79 @@
             </fieldset>
 
             <br />
+
+            <!-- ANCHOR: File Upload -->
+            <label for="resume">Upload Resume (PDF):</label>
+            <input
+                type="file"
+                id="resume"
+                name="resume"
+                accept="application/pdf"
+            />
+            <br /><br />
+
+            <!-- ANCHOR: Skill Input with Datalist -->
+            <label for="skill">Top Skill:</label>
+            <input list="skills" id="skill" name="skill" />
+            <datalist id="skills">
+                <option value="HTML" />
+                <option value="CSS" />
+                <option value="JavaScript" />
+                <option value="Python" />
+                <option value="C++" />
+            </datalist>
+            <br /><br />
+
+            <!-- ANCHOR: Skill Level Dropdown -->
+            <label for="skillLevel">Skill Level:</label>
+            <select id="skillLevel" name="skillLevel" required>
+                <option value="">-- Select Level --</option>
+                <option value="beginner">Beginner</option>
+                <option value="intermediate">Intermediate</option>
+                <option value="advanced">Advanced</option>
+            </select>
+            <br /><br />
+
+            <!-- ANCHOR: Preferred Contact Method (Radio Buttons) -->
+            <fieldset>
+                <legend>Preferred Contact Method*</legend>
+                <label
+                    ><input
+                        type="radio"
+                        name="contact"
+                        value="email"
+                        required
+                    />
+                    Email</label
+                >
+                <label
+                    ><input type="radio" name="contact" value="phone" />
+                    Phone</label
+                >
+                <label
+                    ><input type="radio" name="contact" value="none" /> No
+                    Contact</label
+                >
+            </fieldset>
+            <br /><br />
+
+            <!-- ANCHOR: Newsletter Subscription (Checkbox) -->
+            <label>
+                <input type="checkbox" id="subscribe" name="subscribe" />
+                Subscribe to newsletter
+            </label>
+            <br /><br />
+
+            <!-- ANCHOR: Comments (Textarea) -->
+            <label for="comments">Comments:</label>
+            <textarea
+                id="comments"
+                name="comments"
+                rows="4"
+                cols="40"
+                placeholder="Your feedback here..."
+            ></textarea>
+            <br /><br />
 
             <!-- ANCHOR: Form Actions -->
             <button type="submit">Submit</button>
