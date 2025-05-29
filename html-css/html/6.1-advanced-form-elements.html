@@ -1,0 +1,112 @@
+<!--
+    File: 06.1-advanced-form-elements.html
+    Purpose: Practice advanced HTML5 form features, input types, validation, and accessibility.
+    Topics: input types (date, number, color, range), min/max, pattern, required, fieldset, aria
+    Obsidian Note: obsidian://open?vault=crisis-vault&file=%40coding_notes%2F%4001%20%C2%BB%20HTML%20%26%20CSS%2FHTML5%2F%40006.1%20%C2%BB%20Advanced%20Forms%20Elements%20%26%20Validation
+
+    Author: Rayhana Akter Sumaya
+    Date: 2025-05-29
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Advanced HTML5 Form</title>
+    </head>
+    <body>
+        <h2>🎯 Feedback Form — Advanced Fields</h2>
+
+        <form
+            action="/submit-advanced"
+            method="post"
+            aria-describedby="form-desc"
+        >
+            <p id="form-desc">All fields marked with * are required.</p>
+
+            <!-- ANCHOR: Personal Info Section -->
+            <fieldset>
+                <legend>👤 Personal Info</legend>
+
+                <label for="fullname">Full Name*:</label>
+                <input type="text" id="fullname" name="fullname" required />
+                <br /><br />
+
+                <label for="age">Age (18–99)*:</label>
+                <input
+                    type="number"
+                    id="age"
+                    name="age"
+                    min="18"
+                    max="99"
+                    required
+                />
+                <br /><br />
+
+                <label for="email">Email*:</label>
+                <input type="email" id="email" name="email" required />
+            </fieldset>
+
+            <br />
+
+            <!-- ANCHOR: Preferences Section -->
+            <fieldset>
+                <legend>🎨 Preferences</legend>
+
+                <label for="favColor">Favorite Color:</label>
+                <input type="color" id="favColor" name="favColor" />
+                <br /><br />
+
+                <label for="satisfaction">Satisfaction (1–10):</label>
+                <input
+                    type="range"
+                    id="satisfaction"
+                    name="satisfaction"
+                    min="1"
+                    max="10"
+                />
+                <br /><br />
+
+                <label for="birthdate">Date of Birth:</label>
+                <input type="date" id="birthdate" name="birthdate" />
+            </fieldset>
+
+            <br />
+
+            <!-- ANCHOR: Security Section -->
+            <fieldset>
+                <legend>🔐 Account Setup</legend>
+
+                <label for="username">Username* (alphanumeric only):</label>
+                <input
+                    type="text"
+                    id="username"
+                    name="username"
+                    pattern="^[a-zA-Z0-9]{5,15}$"
+                    required
+                    aria-describedby="usernameHelp"
+                />
+                <small id="usernameHelp"
+                    >5–15 characters, letters & numbers only</small
+                >
+                <br /><br />
+
+                <label for="password">Password*:</label>
+                <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    required
+                    minlength="6"
+                />
+            </fieldset>
+
+            <br />
+
+            <!-- ANCHOR: Form Actions -->
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </form>
+    </body>
+</html>
