@@ -1,0 +1,86 @@
+<!--
+    File: 01-intro-to-css.html
+    Purpose: Demonstrates the three main ways to apply CSS to HTML—inline, internal, and external styles.
+    Concepts covered: CSS introduction, inline styles, internal stylesheet, external stylesheet linking.
+    Instructions: Open this file in a browser to view examples of all three CSS types applied on one page.
+
+    Author: Rayhana Akter Sumaya
+    Date: 2025-05-30
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Intro to CSS</title>
+
+        <!-- LINK: External CSS -->
+        <link rel="stylesheet" href="../02-css/01-intro-to-css.css" />
+
+        <!-- TODO: Internal CSS Example -->
+        <style>
+            h2 {
+                color: royalblue;
+            }
+
+            .internal-demo {
+                background-color: #ddd;
+                border: 2px solid #aaa;
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Introduction to CSS</h1>
+
+        <p>
+            <strong>CSS</strong> stands for Cascading Style Sheets. It is used
+            to style HTML elements visually.
+        </p>
+        <p>There are 3 types of CSS:</p>
+        <ul>
+            <li>
+                Inline – using <code>style</code> attribute directly in tags
+            </li>
+            <li>
+                Internal – using <code>&lt;style&gt;</code> tag inside
+                &lt;head&gt;
+            </li>
+            <li>External – linking a separate <code>.css</code> file</li>
+        </ul>
+
+        <!-- ANCHOR: Inline CSS Example -->
+        <section>
+            <h2 style="color: green">This heading uses Inline CSS</h2>
+            <p>
+                <em
+                    >This style is applied directly via the
+                    <code>style</code> attribute.</em
+                >
+            </p>
+        </section>
+
+        <!-- ANCHOR: Internal CSS Example -->
+        <section class="internal-demo">
+            <h2>This section uses Internal CSS</h2>
+            <p>
+                <em
+                    >This box is styled using a &lt;style&gt; tag inside the
+                    &lt;head&gt;.</em
+                >
+            </p>
+        </section>
+
+        <!-- ANCHOR: External CSS Example -->
+        <section class="external-demo">
+            <h2>This section uses External CSS</h2>
+            <p>
+                <em
+                    >This style is applied from
+                    <code>01-intro-to-css.css</code>.</em
+                >
+            </p>
+        </section>
+    </body>
+</html>

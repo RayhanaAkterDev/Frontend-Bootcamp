@@ -1,0 +1,14 @@
+/* TODO: External CSS Example */
+
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+}
+
+.external-demo {
+    padding: 10px;
+    margin-top: 30px;
+    font-size: 24px;
+    border: 2px dashed crimson;
+    background-color: #fff8f0;
+}
