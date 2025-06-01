@@ -1,0 +1,120 @@
+<!--
+    File: 04-units-and-measurements.html
+    Purpose: Demonstrates CSS units and measurements with detailed info on relative units rem and em.
+    Instructions: Open in browser to see and understand units usage.
+
+    Author: Rayhana Akter Sumaya
+    Date: 2025-06-01
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+            name="description"
+            content="Practice page demonstrating CSS units and measurements, with explanations of px, %, rem, em, and others."
+        />
+        <title>CSS Units and Measurements</title>
+
+        <!-- Link to external stylesheet -->
+        <link
+            rel="stylesheet"
+            href="../stylesheets/04-units-and-measurements.css"
+        />
+    </head>
+    <body>
+        <main>
+            <h1>CSS Units and Measurements Practice</h1>
+
+            <section>
+                <h2>What are CSS Units?</h2>
+                <p>
+                    CSS units define how lengths, sizes, and spaces are measured
+                    in web design. They can be <strong>absolute</strong> or
+                    <strong>relative</strong>.
+                </p>
+            </section>
+
+            <section>
+                <h2>Common CSS Units</h2>
+                <ul>
+                    <li>
+                        <code>px</code> (pixels): Absolute unit, fixed size
+                        regardless of other settings.
+                    </li>
+                    <li>
+                        <code>%</code> (percent): Relative to parent element's
+                        size.
+                    </li>
+                    <li>
+                        <code>rem</code> (root em): Relative to the
+                        <em>root element's</em> font size (usually
+                        &lt;html&gt;).
+                    </li>
+                    <li>
+                        <code>em</code>: Relative to the
+                        <em>parent element's</em> font size.
+                    </li>
+                    <li>
+                        <code>vw</code> / <code>vh</code>: Relative to viewport
+                        width / height.
+                    </li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Difference between <code>rem</code> and <code>em</code></h2>
+                <p>
+                    <strong><code>rem</code></strong> depends on the root
+                    element's font size. For example, if the root font size is
+                    16px, then <code>1rem = 16px</code>. This means
+                    <code>rem</code> units are consistent throughout the page.
+                </p>
+                <p>
+                    <strong><code>em</code></strong> depends on the font size of
+                    the <em>parent element</em>. It can compound if nested
+                    elements use <code>em</code> for size, causing sizes to
+                    multiply. This makes <code>em</code> more flexible but
+                    sometimes tricky.
+                </p>
+                <p>
+                    Example: If a parent has <code>font-size: 20px;</code>, then
+                    <code>1em = 20px</code> for its children. For the children’s
+                    children, if they use <code>1em</code>, it is relative to
+                    their direct parent's font size.
+                </p>
+            </section>
+
+            <section>
+                <h2>Practice Examples</h2>
+                <p>
+                    Try resizing the window or changing font sizes to see how
+                    these units behave differently.
+                </p>
+
+                <p class="px">This text is 48px (absolute).</p>
+
+                <div style="font-size: 20px">
+                    <p class="em">This text is 1.5em (1.5 × 20px = 30px)</p>
+                    <div style="font-size: 1.5em">
+                        <p class="em">
+                            This text is 1.5em inside a 1.5em parent (1.5 × 30px
+                            = 45px)
+                        </p>
+                    </div>
+                </div>
+
+                <p class="rem">
+                    This text is 1.5rem (relative to root, usually 16px → 24px)
+                </p>
+                <p class="percent">
+                    This text is 120% (relative to parent size)
+                </p>
+                <p class="vw">This text is 5vw (5% of viewport width)</p>
+                <p class="vh">This text is 5vh (5% of viewport height)</p>
+            </section>
+        </main>
+    </body>
+</html>

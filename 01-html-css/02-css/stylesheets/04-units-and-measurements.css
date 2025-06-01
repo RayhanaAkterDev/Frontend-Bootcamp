@@ -1,0 +1,20 @@
+/* Unit examples */
+.px {
+    font-size: 48px; /* pixels */
+    background-color: aquamarine;
+}
+.em {
+    font-size: 1.5em; /* relative to parent */
+}
+.rem {
+    font-size: 1.5rem; /* relative to root */
+}
+.percent {
+    font-size: 120%; /* relative to parent */
+}
+.vw {
+    font-size: 5vw; /* relative to viewport width */
+}
+.vh {
+    font-size: 5vh; /* relative to viewport height */
+}
