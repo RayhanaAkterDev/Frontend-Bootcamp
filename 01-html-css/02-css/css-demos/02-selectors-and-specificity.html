@@ -1,0 +1,88 @@
+<!--
+    File: 02-selectors-and-specificity.html
+    Purpose: Demonstrates various CSS selectors and explains specificity rules.
+    Instructions: Open in a browser and inspect elements to see how selectors apply styles.
+
+    Author: Rayhana Akter Sumaya
+    Date: 2025-05-30
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+            name="description"
+            content="Practice page demonstrating CSS selectors and specificity."
+        />
+        <title>CSS Selectors & Specificity</title>
+
+        <!-- Link to external stylesheet -->
+        <link
+            rel="stylesheet"
+            href="../stylesheets/02-selectors-and-specificity.css"
+        />
+    </head>
+    <body>
+        <main>
+            <h1>CSS Selectors and Specificity Practice</h1>
+
+            <!-- Paragraph styled by type selector -->
+            <p>
+                This paragraph is styled by a <code>type selector</code> (all
+                <code>&lt;p&gt;</code> tags).
+            </p>
+
+            <!-- Paragraph styled by class selector -->
+            <p class="highlight">
+                This paragraph has a <code>class selector</code> that adds a
+                yellow background.
+            </p>
+
+            <!-- Paragraph styled by ID selector -->
+            <p id="unique">
+                This paragraph uses an <code>ID selector</code> with red bold
+                text.
+            </p>
+
+            <!-- Input styled by attribute selector -->
+            <input
+                type="text"
+                placeholder="Text input styled with attribute selector"
+            />
+            <br /><br />
+
+            <!-- Link demonstrating pseudo-class selector -->
+            <a href="#">Hover over this link to see pseudo-class effect</a>
+
+            <!-- Span inside div styled by descendant selector -->
+            <div>
+                <span
+                    >This span inside a div is italic using descendant
+                    selector.</span
+                >
+            </div>
+
+            <!-- List items styled by child selector -->
+            <ul>
+                <li>First list item (child selector squares the bullet)</li>
+                <li>Second list item</li>
+            </ul>
+
+            <!-- Paragraph demonstrating specificity with class, ID, and inline style -->
+            <p class="test" id="test" style="color: orange">
+                This paragraph has <code>class</code>, <code>id</code>, and an
+                <code>inline style</code>. Inline style has the highest
+                specificity and overrides the others.
+            </p>
+
+            <!-- Paragraph and link sharing font styles using group selector -->
+            <p>
+                This paragraph shares font style with the link below using group
+                selector.
+            </p>
+            <a href="#">I'm part of the group too!</a>
+        </main>
+    </body>
+</html>

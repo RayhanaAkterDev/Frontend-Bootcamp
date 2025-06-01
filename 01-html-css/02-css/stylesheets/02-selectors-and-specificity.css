@@ -1,0 +1,79 @@
+/*
+  CSS Selectors and Specificity Practice
+
+  This stylesheet demonstrates different types of CSS selectors
+  and explains the concept of specificity.
+
+  Specificity determines which CSS rules take precedence when multiple
+  rules target the same element.
+
+  Specificity hierarchy (lowest to highest):
+  - Inline styles (style attribute) — 1000
+  - ID selectors (#id) — 100
+  - Class selectors (.class), attribute selectors ([attr]), pseudo-classes (:hover) — 10
+  - Type selectors (div, p, h1), pseudo-elements (::before) — 1
+  - Universal selector (*) — 0
+
+  Note: When two rules have the same specificity, the rule that appears later in the CSS wins.
+*/
+
+/* Reset default margin and padding, set box-sizing globally */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Type selector: styles all <p> elements */
+p {
+    color: darkblue;
+}
+
+/* Class selector: styles all elements with class "highlight" */
+.highlight {
+    background-color: yellow;
+}
+
+/* ID selector: styles element with id "unique" */
+#unique {
+    font-weight: bold;
+    color: red;
+}
+
+/* Attribute selector: styles input elements with type="text" */
+input[type='text'] {
+    border: 2px solid green;
+}
+
+/* Pseudo-class selector: styles links on hover */
+a:hover {
+    color: orange;
+}
+
+/* Descendant selector: styles <span> elements inside <div> */
+div span {
+    font-style: italic;
+}
+
+/* Child selector: styles direct <li> children of <ul> */
+ul > li {
+    list-style-type: square;
+}
+
+/* Group selector: applies same font family to <p> and <a> */
+p,
+a {
+    font-family: Arial, sans-serif;
+}
+
+/* Specificity test: class selector */
+.test {
+    color: purple; /* specificity 10 */
+}
+
+/* Specificity test: ID selector overrides class */
+#test {
+    color: teal; /* specificity 100 */
+}
+
+/* Note: Inline styles in HTML override both ID and class selectors */
