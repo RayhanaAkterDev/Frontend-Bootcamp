@@ -1,0 +1,54 @@
+/*
+  CSS Universal Reset
+  Removes default margin, padding, and sets box-sizing to border-box
+  to ensure consistent layout across all browsers.
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Additional base styling to demonstrate clean layout */
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    line-height: 1.5;
+    background-color: #fdfdfd;
+}
+
+main {
+    max-width: 600px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 16px;
+    color: darkslategray;
+}
+
+p {
+    margin-bottom: 16px;
+}
+
+ul {
+    list-style-type: square;
+    margin-bottom: 16px;
+}
+
+li {
+    margin-left: 20px;
+    margin-bottom: 8px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: teal;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
