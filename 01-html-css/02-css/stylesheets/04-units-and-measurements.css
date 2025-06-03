@@ -1,20 +1,50 @@
-/* Unit examples */
-.px {
-    font-size: 48px; /* pixels */
-    background-color: aquamarine;
+/*
+  CSS Units & Measurements Practice
+  Demonstrates absolute and relative units like px, %, em, rem, vw, vh, and auto.
+*/
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
 }
-.em {
-    font-size: 1.5em; /* relative to parent */
+
+h1 {
+    text-align: center;
+    margin-bottom: 2rem;
 }
-.rem {
-    font-size: 1.5rem; /* relative to root */
+
+.box {
+    border: 2px solid #444;
+    background-color: #d6f5e3;
+    margin: 10px 0;
+    padding: 10px;
 }
-.percent {
-    font-size: 120%; /* relative to parent */
+
+/* Absolute unit */
+.px-box {
+    width: 300px;
 }
-.vw {
-    font-size: 5vw; /* relative to viewport width */
+
+/* Relative to parent */
+.percent-box {
+    width: 80%;
 }
-.vh {
-    font-size: 5vh; /* relative to viewport height */
+
+/* Relative to current font size */
+.em-box {
+    padding: 2em; /* 32px if base font size is 16px*/
+    background-color: #f0e68c;
+}
+
+/* Relative to root font size */
+.rem-box {
+    margin: 2rem 0; /* 32px if root font size is 16px */
+    background-color: #f5b7b1;
+}
+
+/* Viewport based units */
+.vwvh-box {
+    width: 50vw;
+    height: 20vh;
+    background-color: #c1d3f5;
 }
